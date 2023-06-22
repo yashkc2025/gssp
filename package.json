@@ -1,0 +1,17 @@
+{
+  "name": "blogs",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/image": "^0.16.4",
+    "astro": "^2.1.9",
+    "sass": "^1.60.0"
+  }
+}

@@ -1,0 +1,20 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image, Picture } from "@astrojs/image/components";
+---
+
+<MainLayout title="GSSP">
+  <div class="hero">
+    <Image
+      src={"/images/gssp.jpg"}
+      width={1024}
+      height={1024}
+      alt="GSSP"
+      format={"webp"}
+    />
+    <div class="hero-text">
+        <h1>Guru Saran Satsangi Peddinti</h1>
+    <h3>A Data Science Undergraduate Student</h3>
+    </div>
+  </div>
+</MainLayout>

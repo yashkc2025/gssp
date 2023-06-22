@@ -1,0 +1,21 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import PostCard from "../components/PostCard.astro";
+
+let key = ["about", "hi"];
+
+import { formatBlogPosts } from "../js/utils";
+
+const allPosts = await Astro.glob("./blog/*.md");
+const formattedPosts = formatBlogPosts(allPosts);
+---
+
+<MainLayout title="Blogs" description="hi" keywords={key}>
+<div class="post-group ">
+{
+  formattedPosts.map((post) => (
+    <PostCard frontmatter={post.frontmatter} url={post.url} tagtype="h2" />
+  ))
+}
+</div>
+</MainLayout>

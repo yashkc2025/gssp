@@ -1,0 +1,59 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import { Image, Picture } from "@astrojs/image/components";
+---
+
+<MainLayout title="GSSP">
+  <div class="project">
+    <h1>Projects</h1>
+    <div class="items">
+        <div class="project-item">
+            <Image
+                src={'/images/project.png'}
+                alt="Project Image"
+                width={300}
+                height={200}
+                format={"webp"}
+                quality={100}
+            />
+          <p style="font-weight: bold;">
+            Your Sub-Header Goes Here
+          </p>
+          <p>There is just enough space here for
+            several lines of text. Use it well.</p>
+        </div>
+        <div class="project-item">
+            <Image
+                src={'/images/project.png'}
+                alt="Project Image"
+                width={300}
+                height={200}
+                format={"webp"}
+                quality={100}
+
+            />
+          <p style="font-weight: bold;">
+            Your Sub-Header Goes Here
+          </p>
+          <p>There is just enough space here for
+            several lines of text. Use it well.</p>
+        </div>
+        <div class="project-item">
+            <Image
+                src={'/images/project.png'}
+                alt="Project Image"
+                width={300}
+                height={200}
+                format={"webp"}
+                quality={100}
+
+            />
+          <p style="font-weight: bold;">
+            Your Sub-Header Goes Here
+          </p>
+          <p>There is just enough space here for
+            several lines of text. Use it well.</p>
+        </div>
+    </div>
+  </div>
+</MainLayout>
